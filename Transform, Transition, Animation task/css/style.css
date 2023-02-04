@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.earth{
+    position: absolute;
+    top: 26%;
+    left: 35%;
+    width: 22%;
+    animation: earth 20s ease infinite;
+}
+
+/* @keyframes earth {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} */
+
+.fullmoon{
+    position: absolute;
+    top: 36%;
+    left: 17%;
+    width: 15%;
+    animation: fullmoon 20s linear infinite;
+}
+
+@keyframes fullmoon {
+    0%{
+        top: 36%;
+        left: 17%;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    12.5%{
+        top: 4%;
+        left: 23%;
+        transform: rotate(45deg);
+        opacity: 0;
+    }
+    18.75%{
+        top: 1%;
+        left: 30%;
+        transform: rotate(67.5deg);
+        opacity: 1;
+    }
+    25%{
+        top: -3%;
+        left: 40%;
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+    31.25%{
+        top: 1%;
+        left: 50%;
+        transform: rotate(112.5deg);
+        opacity: 1;
+    }
+    37.5%{
+        top: 4%;
+        left: 55%;
+        transform: rotate(135deg);
+        opacity: 0;
+    }
+    43.75%{
+        top: 26%;
+        left: 60%;
+        transform: rotate(157.5deg);
+        opacity: 1;
+    }
+    50%{
+        top: 36%;
+        left: 63%;
+        transform: rotate(180deg);
+        opacity: 0;
+    }
+    56.25%{
+        top: 55%;
+        left: 58%;
+        transform: rotate(202.5deg);
+        opacity: 1;
+    }
+    62.5%{
+        top: 68%;
+        left: 55%;
+        transform: rotate(225deg);
+        opacity: 0;
+    }
+    68.75%{
+        top: 69%;
+        left: 48%;
+        transform: rotate(247.5deg);
+        opacity: 1;
+    }
+    75%{
+        top: 70%;
+        left: 40%;
+        transform: rotate(270deg);
+        opacity: 0;
+    }
+    81.25%{
+        top: 69%;
+        left: 30%;
+        transform: rotate(292.5deg);
+        opacity: 1;
+    }
+    87.5%{
+        top: 68%;
+        left: 23%;
+        transform: rotate(315deg);
+        opacity: 0;
+    }
+    100%{
+        top: 36%;
+        left: 17%;
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+.waxing-moon{
+    position: absolute;
+    top: 4%;
+    left: 23%;
+    width: 15%;
+    transform: rotate(210deg);
+    animation: waxing-moon 5s linear infinite;
+}
+
+@keyframes waxing-moon {
+    0%{
+        transform: rotate(210deg);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.first-quarter-moon{
+    position: absolute;
+    width: 15%;
+    top: -3%;
+    left: 40%;
+    transform: rotate(340deg);
+    animation: first-quarter-moon 5s 2.5s linear infinite;
+}
+
+@keyframes first-quarter-moon {
+    0%{
+        transform: rotate(340deg);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.waxing-crescent-moon{
+    position: absolute;
+    top: 4%;
+    right: 29%;
+    width: 15%;
+    transform: rotate(183deg);
+    animation: waxing-crescent-moon 5s 5s linear infinite;
+}
+
+@keyframes waxing-crescent-moon{
+    0%{
+        transform: rotate(183deg);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.newmoon{
+    position: absolute;
+    top: 36%;
+    right: 23%;
+    width: 15%;
+    animation: newmoon 5s 7.5s linear infinite;
+    filter: brightness(50%);
+    opacity: 0;
+}
+
+@keyframes newmoon {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.waning-crescent-moon{
+    position: absolute;
+    top: 68%;
+    right: 30%;
+    width: 15%;
+    transform: rotate(360deg);
+    animation: waning-crescent-moon 5s 10s linear infinite;
+}
+
+@keyframes waning-crescent-moon{
+    0%{
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.third-quarter-moon{
+    position: absolute;
+    width: 15%;
+    bottom: -1%;
+    left: 40%;
+    transform: rotate(163deg);
+    animation: third-quarter-moon 5s 12.5s linear infinite;
+}
+
+@keyframes third-quarter-moon {
+    0%{
+        transform: rotate(163deg);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.waning-moon{
+    position: absolute;
+    top: 68%;
+    left: 23%;
+    width: 15%;
+    transform: rotate(360deg);
+    animation: waning-moon 5s 15s linear infinite;
+}
+
+@keyframes waning-moon {
+    0%{
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.sun{
+    position: absolute;
+    width: 50%;
+    top: 22%;
+    right: -34%;
+}
